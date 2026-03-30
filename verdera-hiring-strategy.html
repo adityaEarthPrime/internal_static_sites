@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verdera · Hiring Strategy 2025–2028</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green-deep: #0C3B2E;
+  --green-mid: #1A5C47;
+  --green-light: #2D8B6A;
+  --green-pale: #E8F5F0;
+  --green-soft: #C5E8DC;
+  --amber: #C97B2A;
+  --amber-pale: #FDF3E5;
+  --amber-soft: #F5D49A;
+  --ink: #1C1C1A;
+  --ink-2: #3D3D39;
+  --ink-3: #6B6B65;
+  --ink-4: #9A9A93;
+  --paper: #F7F4EF;
+  --paper-2: #EFECE5;
+  --paper-3: #E5E1D8;
+  --white: #FFFFFF;
+  --rule: rgba(28,28,26,0.1);
+  --rule-soft: rgba(28,28,26,0.06);
+  --purple-pale: #F0EFFE;
+  --purple-soft: #C9C5F5;
+  --purple-mid: #6B63D4;
+  --teal-pale: #E4F4F1;
+  --teal-mid: #1D9E82;
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'DM Sans', sans-serif;
+  --sidebar-w: 220px;
+  --content-max: 860px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 15px; }
+
+body {
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ─── SIDEBAR ─── */
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: var(--green-deep);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.sidebar-logo {
+  padding: 28px 24px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar-logo .wordmark {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+
+.sidebar-logo .doc-title {
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  margin-top: 4px;
+  letter-spacing: 0.03em;
+  font-weight: 300;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 16px 0;
+}
+
+.nav-section {
+  padding: 8px 24px 4px;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.25);
+}
+
+.nav-link {
+  display: block;
+  padding: 7px 24px;
+  font-size: 12.5px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+  border-left: 2px solid transparent;
+}
+
+.nav-link:hover { color: rgba(255,255,255,0.9); background: rgba(255,255,255,0.05); }
+.nav-link.active { color: #fff; border-left-color: var(--green-light); background: rgba(255,255,255,0.06); }
+
+.sidebar-footer {
+  padding: 16px 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 11px;
+  color: rgba(255,255,255,0.25);
+  font-weight: 300;
+}
+
+/* ─── MAIN CONTENT ─── */
+.main {
+  margin-left: var(--sidebar-w);
+  flex: 1;
+  min-width: 0;
+}
+
+.content-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 60px 48px 120px;
+}
+
+/* ─── SECTION TITLES ─── */
+section { margin-bottom: 72px; }
+
+.section-eyebrow {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--green-mid);
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  color: var(--ink-3);
+  font-weight: 300;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.section-rule {
+  height: 1px;
+  background: var(--rule);
+  margin-bottom: 32px;
+}
+
+/* ─── HERO ─── */
+.hero {
+  padding: 60px 0 48px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 72px;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--green-light);
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-family: var(--serif);
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.hero-title em {
+  font-style: italic;
+  color: var(--green-mid);
+}
+
+.hero-sub {
+  font-size: 15px;
+  color: var(--ink-3);
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 36px;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 680px;
+}
+
+.hero-stat {
+  background: var(--white);
+  padding: 18px 20px;
+}
+
+.hero-stat-val {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--green-deep);
+  margin-bottom: 2px;
+}
+
+.hero-stat-label {
+  font-size: 11px;
+  color: var(--ink-4);
+  font-weight: 300;
+}
+
+/* ─── INSIGHT BOX ─── */
+.insight {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--green-light);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  font-size: 13.5px;
+  color: var(--ink-2);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.insight strong { font-weight: 500; color: var(--ink); }
+
+.insight.amber {
+  border-left-color: var(--amber);
+}
+
+.insight.purple {
+  border-left-color: var(--purple-mid);
+}
+
+/* ─── FOUNDER CARDS ─── */
+.founder-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.founder-card {
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.founder-card.aditya {
+  background: var(--purple-pale);
+  border: 1px solid var(--purple-soft);
+}
+
+.founder-card.gautam {
+  background: var(--green-pale);
+  border: 1px solid var(--green-soft);
+}
+
+.founder-card-name {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+
+.founder-card.aditya .founder-card-name { color: var(--purple-mid); }
+.founder-card.gautam .founder-card-name { color: var(--green-mid); }
+
+.founder-card-archetype {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.founder-card.aditya .founder-card-archetype { color: var(--purple-mid); }
+.founder-card.gautam .founder-card-archetype { color: var(--green-light); }
+
+.founder-card-item {
+  font-size: 12.5px;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 3px 0;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.founder-card.aditya .founder-card-item {
+  color: #4A43A8;
+  border-bottom-color: rgba(107,99,212,0.15);
+}
+
+.founder-card.gautam .founder-card-item {
+  color: var(--green-mid);
+  border-bottom-color: rgba(29,158,107,0.15);
+}
+
+.founder-card-item:last-child { border-bottom: none; }
+
+.founder-card-item::before {
+  content: '—';
+  font-size: 11px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+/* ─── TRAVEL CARDS ─── */
+.travel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.travel-card {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.travel-card-header {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.travel-card.aditya .travel-card-header { background: var(--purple-pale); border-bottom: 1px solid var(--purple-soft); }
+.travel-card.gautam .travel-card-header { background: var(--green-pale); border-bottom: 1px solid var(--green-soft); }
+
+.travel-card-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.travel-card.aditya .travel-card-name { color: var(--purple-mid); }
+.travel-card.gautam .travel-card-name { color: var(--green-mid); }
+
+.travel-freq {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.travel-card.aditya .travel-freq { background: var(--purple-soft); color: #3830A0; }
+.travel-card.gautam .travel-freq { background: var(--green-soft); color: var(--green-deep); }
+
+.travel-card-body { padding: 16px 20px; }
+
+.travel-item {
+  font-size: 12.5px;
+  font-weight: 300;
+  color: var(--ink-2);
+  line-height: 1.6;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--rule-soft);
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.travel-item:last-child { border-bottom: none; }
+
+.travel-item-cadence {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-4);
+  min-width: 70px;
+  flex-shrink: 0;
+}
+
+/* ─── COMP TABLE ─── */
+.comp-table-wrap {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.comp-table thead th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-4);
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--rule);
+}
+
+.comp-table tbody tr { border-bottom: 1px solid var(--rule-soft); }
+.comp-table tbody tr:last-child { border-bottom: none; }
+.comp-table tbody tr:hover { background: var(--paper); }
+
+.comp-table td {
+  padding: 11px 16px;
+  color: var(--ink-2);
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+.comp-table td:first-child {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.level-pill {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.level-pill.junior { background: var(--green-pale); color: var(--green-deep); }
+.level-pill.mid { background: var(--amber-pale); color: #7A4A10; }
+.level-pill.senior { background: var(--purple-pale); color: var(--purple-mid); }
+
+.comp-note {
+  font-size: 12px;
+  color: var(--ink-3);
+  line-height: 1.7;
+  font-weight: 300;
+  padding: 14px 16px;
+  background: var(--paper-2);
+  border-top: 1px solid var(--rule);
+}
+
+.comp-note strong { font-weight: 500; color: var(--ink-2); }
+
+/* ─── PHILOSOPHY GRID ─── */
+.phil-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.phil-card {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+
+.phil-card-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.phil-card-body {
+  font-size: 12.5px;
+  color: var(--ink-3);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+/* ─── REMOTE TABLE ─── */
+.remote-table {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.remote-row {
+  display: grid;
+  grid-template-columns: 200px 120px 1fr;
+  gap: 16px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--rule-soft);
+  align-items: start;
+  font-size: 12.5px;
+}
+
+.remote-row:last-child { border-bottom: none; }
+.remote-row.header {
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--rule);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-4);
+  padding: 10px 20px;
+}
+
+.remote-row-role { font-weight: 500; color: var(--ink); }
+.remote-row-tz { color: var(--ink-4); font-size: 11.5px; }
+.remote-row-note { color: var(--ink-3); line-height: 1.55; font-weight: 300; }
+
+.tz-tag {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  color: var(--ink-3);
+  font-weight: 400;
+}
+
+/* ─── PHASE HEADERS ─── */
+.phase-header {
+  padding: 20px 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid;
+}
+
+.phase-header.p1 { background: var(--green-pale); border-color: var(--green-soft); }
+.phase-header.p2 { background: #EBF3FD; border-color: #BDD6F5; }
+.phase-header.p3 { background: var(--amber-pale); border-color: var(--amber-soft); }
+
+.phase-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.p1 .phase-badge { background: var(--green-light); color: #fff; }
+.p2 .phase-badge { background: #2A7DC4; color: #fff; }
+.p3 .phase-badge { background: var(--amber); color: #fff; }
+
+.phase-header h3 {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+
+.p1 .phase-header h3 { color: var(--green-deep); }
+.p2 .phase-header h3 { color: #0D3A6B; }
+.p3 .phase-header h3 { color: #5A3210; }
+
+.phase-stats {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+  font-weight: 300;
+  flex-wrap: wrap;
+}
+
+.p1 .phase-stats { color: var(--green-mid); }
+.p2 .phase-stats { color: #2A7DC4; }
+.p3 .phase-stats { color: var(--amber); }
+
+/* ─── ROLE CARDS ─── */
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.role-card {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.role-card:hover { border-color: rgba(28,28,26,0.2); box-shadow: 0 2px 8px rgba(28,28,26,0.05); }
+.role-card.open { border-color: var(--green-light); }
+
+.role-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.role-card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.fn-tag {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.fn-dep { background: var(--teal-pale); color: #0A5C4A; }
+.fn-tech { background: var(--purple-pale); color: var(--purple-mid); }
+.fn-bd { background: var(--amber-pale); color: #7A4A10; }
+.fn-ops { background: var(--paper-3); color: var(--ink-2); }
+.fn-creative { background: #FDE8F0; color: #8B2252; }
+
+.role-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.reports-tag {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 400;
+}
+
+.reports-tag.to-a { color: var(--purple-mid); }
+.reports-tag.to-g { color: var(--green-light); }
+.reports-tag.to-both { color: var(--ink-3); }
+
+.loc-tag {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  color: var(--ink-4);
+}
+
+.role-salary {
+  font-size: 12px;
+  color: var(--ink-3);
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.role-trigger {
+  font-size: 12px;
+  color: var(--ink-3);
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.trigger-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--amber);
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.role-detail {
+  display: none;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 12.5px;
+  color: var(--ink-3);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.role-card.open .role-detail { display: block; }
+
+.role-expand {
+  font-size: 11px;
+  color: var(--ink-4);
+  margin-top: 8px;
+  font-weight: 300;
+}
+
+/* ─── GLOBAL SECTION ─── */
+.global-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.global-card {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+
+.global-card-label {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--green-light);
+  margin-bottom: 5px;
+}
+
+.global-card-title {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 7px;
+}
+
+.global-card-body {
+  font-size: 12.5px;
+  color: var(--ink-3);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+/* ─── REV BARS ─── */
+.rev-bars { margin-bottom: 32px; }
+
+.rev-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.rev-label {
+  font-size: 12px;
+  color: var(--ink-4);
+  min-width: 68px;
+  font-weight: 300;
+}
+
+.rev-track {
+  flex: 1;
+  height: 4px;
+  background: var(--paper-3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.rev-fill { height: 100%; border-radius: 2px; }
+.rev-val { font-size: 12.5px; font-weight: 500; color: var(--ink); min-width: 80px; text-align: right; }
+
+/* ─── PRINT ─── */
+@media print {
+  .sidebar { display: none; }
+  .main { margin-left: 0; }
+  .content-inner { padding: 40px; }
+  .role-detail { display: block !important; }
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  .sidebar { display: none; }
+  .main { margin-left: 0; }
+  .content-inner { padding: 32px 24px 80px; }
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+  .founder-grid, .travel-grid, .phil-grid, .global-grid { grid-template-columns: 1fr; }
+  .role-grid { grid-template-columns: 1fr; }
+  .remote-row { grid-template-columns: 1fr; gap: 4px; }
+  .remote-row.header { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <div class="wordmark">Verdera</div>
+    <div class="doc-title">Hiring Strategy · 2025–2028</div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-section">Overview</div>
+    <a class="nav-link" href="#overview">At a glance</a>
+    <a class="nav-link" href="#founders">Founder model</a>
+
+    <div class="nav-section">Strategy</div>
+    <a class="nav-link" href="#comp">Compensation</a>
+    <a class="nav-link" href="#deployment">Deployment model</a>
+    <a class="nav-link" href="#global">Global team</a>
+    <a class="nav-link" href="#remote">Remote model</a>
+
+    <div class="nav-section">Hiring plan</div>
+    <a class="nav-link" href="#phase1">Phase 1 · Months 0–12</a>
+    <a class="nav-link" href="#phase2">Phase 2 · Months 12–24</a>
+    <a class="nav-link" href="#phase3">Phase 3 · Months 24–36</a>
+  </nav>
+  <div class="sidebar-footer">Confidential · Internal use</div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+<div class="content-inner">
+
+<!-- HERO -->
+<div class="hero" id="overview">
+  <div class="hero-eyebrow">Verdera · Internal Strategy Document</div>
+  <h1 class="hero-title">A hiring plan to reach<br><em>$15–20M ARR</em> in three years</h1>
+  <p class="hero-sub">A small, exceptional team with deep AI leverage — not a large average one. Every hire is deliberate, triggered by clear milestones, and designed to amplify what the two founders do best.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-val">19–21</div>
+      <div class="hero-stat-label">Total team by Year 3</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-val">$20M</div>
+      <div class="hero-stat-label">ARR target, Year 3</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-val">3</div>
+      <div class="hero-stat-label">Phases with clear triggers</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-val">1</div>
+      <div class="hero-stat-label">HQ · Bengaluru</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOUNDER MODEL -->
+<section id="founders">
+  <div class="section-eyebrow">Org model</div>
+  <h2 class="section-title">The two founders, clearly split</h2>
+  <p class="section-subtitle">Every hiring decision in this plan flows from understanding what Aditya and Gautam each do best — and building a team that amplifies those strengths rather than duplicating them.</p>
+
+  <div class="founder-grid">
+    <div class="founder-card aditya">
+      <div class="founder-card-name">Aditya</div>
+      <div class="founder-card-archetype">The Visionary · North Star</div>
+      <div class="founder-card-item">Narrative, brand &amp; evangelism</div>
+      <div class="founder-card-item">Fundraising &amp; investor relations</div>
+      <div class="founder-card-item">Product vision &amp; roadmap</div>
+      <div class="founder-card-item">Technology team</div>
+      <div class="founder-card-item">Creative &amp; storytelling function</div>
+      <div class="founder-card-item">External presence &amp; thought leadership</div>
+    </div>
+    <div class="founder-card gautam">
+      <div class="founder-card-name">Gautam</div>
+      <div class="founder-card-archetype">The Operator · Ground Truth</div>
+      <div class="founder-card-item">BD &amp; sales (owns the institutional connects)</div>
+      <div class="founder-card-item">Deployment quality &amp; client outcomes</div>
+      <div class="founder-card-item">Institutional domain authority</div>
+      <div class="founder-card-item">Finance &amp; operations</div>
+      <div class="founder-card-item">Customer success &amp; renewal</div>
+      <div class="founder-card-item">Making the vision land in reality</div>
+    </div>
+  </div>
+
+  <div class="insight amber">
+    <strong>On BD:</strong> Gautam owns BD because the connects are his — institutional trust built over 20 years doesn't transfer to a hire. The BD lead's job is to operationalize Gautam's relationships into a repeatable pipeline. But every BD asset — the narrative, the deck, the case studies, the "Verdera Verified" brand — flows from Aditya's function. BD lives under Gautam but is fuelled by Aditya. The two founders need a standing weekly rhythm where Aditya feeds the storytelling layer and Gautam converts it into closed contracts.
+  </div>
+
+  <div class="section-rule"></div>
+
+  <h3 style="font-family: var(--serif); font-size:20px; font-weight:300; margin-bottom:6px; color:var(--ink)">Travel cadence</h3>
+  <p style="font-size:13.5px; color:var(--ink-3); font-weight:300; margin-bottom:20px; line-height:1.6">Both founders are based in Bengaluru. Aditya can travel more frequently — his external-facing role (investors, narrative, partnerships) is genuinely location-dependent. Gautam's role grounds the operations in Bengaluru, so his travel is lighter and tied to specific client milestones.</p>
+
+  <div class="travel-grid">
+    <div class="travel-card aditya">
+      <div class="travel-card-header">
+        <div class="travel-card-name">Aditya</div>
+        <div class="travel-freq">~10–12 days abroad / month</div>
+      </div>
+      <div class="travel-card-body">
+        <div class="travel-item"><span class="travel-item-cadence">Monthly</span><span>New York — investors, UNDP relationships, thought leadership events</span></div>
+        <div class="travel-item"><span class="travel-item-cadence">Quarterly</span><span>Bangkok — Southeast Asia client and BD relationships</span></div>
+        <div class="travel-item"><span class="travel-item-cadence">Biannual</span><span>Geneva / London — DFI pipeline, climate finance events (COP, ICLEI)</span></div>
+        <div class="travel-item"><span class="travel-item-cadence">As needed</span><span>Wherever a flagship client or major fundraising meeting is</span></div>
+        <div class="travel-item"><span class="travel-item-cadence">Home stretch</span><span>2–3 consecutive weeks in Bengaluru between bursts — for product depth with the engineering team</span></div>
+      </div>
+    </div>
+    <div class="travel-card gautam">
+      <div class="travel-card-header">
+        <div class="travel-card-name">Gautam</div>
+        <div class="travel-freq">~5–8 days abroad / month</div>
+      </div>
+      <div class="travel-card-body">
+        <div class="travel-item"><span class="travel-item-cadence">Quarterly</span><span>Client geographies — contract milestones, key delivery reviews, relationship-building moments</span></div>
+        <div class="travel-item"><span class="travel-item-cadence">Biannual</span><span>Bangkok / Geneva — wherever the largest active pipeline is concentrated</span></div>
+        <div class="travel-item"><span class="travel-item-cadence">As needed</span><span>Government and DFI meetings requiring his institutional credibility in the room</span></div>
+        <div class="travel-item"><span class="travel-item-cadence">Primary base</span><span>Bengaluru — present for daily team operations, delivery oversight, and running the company</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="insight">
+    <strong>The rhythm that matters most:</strong> A standing weekly sync between both founders — even when one is traveling — to align on what Aditya is committing externally vs. what Gautam can deliver internally. The Founder's Office Lead owns the calendar and documentation for this, making sure nothing falls through the gap between the visionary's external promises and the operator's execution reality.
+  </div>
+
+  <div class="section-rule"></div>
+
+  <h3 style="font-family: var(--serif); font-size:20px; font-weight:300; margin-bottom:6px; color:var(--ink)">Founder compensation</h3>
+  <p style="font-size:13.5px; color:var(--ink-3); font-weight:300; margin-bottom:16px; line-height:1.6">Equal throughout — asymmetry between co-founders creates slow-burn friction that compounds over time.</p>
+
+  <div class="comp-table-wrap">
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>Period</th>
+          <th>ARR target</th>
+          <th>Salary (each)</th>
+          <th>Logic</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Year 1 (0–12 mo)</td><td>$1–2M</td><td>$85–100K</td><td>Sustainable — not extractive. Assumes seed/bridge closed.</td></tr>
+        <tr><td>Year 2 (12–24 mo)</td><td>$5–7M</td><td>$130–160K</td><td>Increase immediately post-raise. Competitive with senior hires.</td></tr>
+        <tr><td>Year 3 (24–36 mo)</td><td>$15–20M</td><td>$180–220K</td><td>Market rate. Essential for long-term founder sustainability.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- COMP PHILOSOPHY -->
+<section id="comp">
+  <div class="section-eyebrow">Compensation</div>
+  <h2 class="section-title">One global rate per role</h2>
+  <p class="section-subtitle">All salary ranges are global and reflect the level of talent — not the location of the hire. A Deployment Lead in Bangkok and one in Bengaluru do the same work and create the same value. They are paid the same. The range within each role reflects seniority only.</p>
+
+  <div class="insight">
+    <strong>The principle:</strong> We are compensating for value created and level of operation — not for cost of living. If someone in a lower-cost city asks why they're paid the same as someone in an expensive city, the answer is: because you are equally valuable. Equity fills the gap for early hires who take on more risk.
+  </div>
+
+  <div class="comp-table-wrap">
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Level</th>
+          <th>Global salary (USD)</th>
+          <th>Equity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Founder's office lead</td>
+          <td><span class="level-pill junior">2–4 yrs exp</span></td>
+          <td>$50–70K</td>
+          <td>0.20–0.40%</td>
+        </tr>
+        <tr>
+          <td>BD &amp; sales lead</td>
+          <td><span class="level-pill junior">3–5 yrs exp</span></td>
+          <td>$65–85K</td>
+          <td>0.20–0.35%</td>
+        </tr>
+        <tr>
+          <td>ML / full-stack engineer</td>
+          <td><span class="level-pill junior">4–6 yrs exp</span></td>
+          <td>$80–105K</td>
+          <td>0.35–0.60%</td>
+        </tr>
+        <tr>
+          <td>Deployment lead</td>
+          <td><span class="level-pill junior">4–6 yrs exp</span></td>
+          <td>$95–120K</td>
+          <td>0.25–0.45%</td>
+        </tr>
+        <tr>
+          <td>Creative &amp; storytelling lead</td>
+          <td><span class="level-pill mid">6–9 yrs exp</span></td>
+          <td>$95–125K</td>
+          <td>0.20–0.35%</td>
+        </tr>
+        <tr>
+          <td>Engineer #2 / backend</td>
+          <td><span class="level-pill junior">4–6 yrs exp</span></td>
+          <td>$80–105K</td>
+          <td>0.20–0.40%</td>
+        </tr>
+        <tr>
+          <td>Finance &amp; ops lead</td>
+          <td><span class="level-pill junior">4–6 yrs exp</span></td>
+          <td>$55–75K</td>
+          <td>0.15–0.25%</td>
+        </tr>
+        <tr>
+          <td>Senior deployment lead</td>
+          <td><span class="level-pill mid">7–10 yrs exp</span></td>
+          <td>$120–155K</td>
+          <td>0.20–0.35%</td>
+        </tr>
+        <tr>
+          <td>Head of customer success</td>
+          <td><span class="level-pill mid">7–10 yrs exp</span></td>
+          <td>$100–135K</td>
+          <td>0.20–0.30%</td>
+        </tr>
+        <tr>
+          <td>Product manager</td>
+          <td><span class="level-pill mid">5–8 yrs exp</span></td>
+          <td>$80–105K</td>
+          <td>0.15–0.28%</td>
+        </tr>
+        <tr>
+          <td>Senior tech lead / EM</td>
+          <td><span class="level-pill senior">8–11 yrs exp</span></td>
+          <td>$130–165K</td>
+          <td>0.20–0.35%</td>
+        </tr>
+        <tr>
+          <td>Head of deployment</td>
+          <td><span class="level-pill senior">10+ yrs exp</span></td>
+          <td>$145–180K</td>
+          <td>0.30–0.50%</td>
+        </tr>
+        <tr>
+          <td>Head of BD / VP sales †</td>
+          <td><span class="level-pill senior">10+ yrs exp</span></td>
+          <td>$170–220K + 10–15% commission</td>
+          <td>0.40–0.65%</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="comp-note">† <strong>Head of BD is the one exception.</strong> This is a genuinely different role at a different level — a senior enterprise sales role in Geneva/DC/London where $170K+ base is the competitive floor, not a premium. It is a different title and scope, not a location uplift for the same role. The distinction matters and should be communicated clearly internally.</div>
+  </div>
+
+  <div class="phil-grid">
+    <div class="phil-card">
+      <div class="phil-card-title">What the range is for</div>
+      <div class="phil-card-body">Where someone sits on the junior-to-senior spectrum within their role title. A DL with 4 years starts at $95K. A DL with 7 years of UNDP and ADB experience starts at $115K. A seniority conversation, transparent with every candidate.</div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card-title">What the range is not for</div>
+      <div class="phil-card-body">Location. Cost of living. "Market rate in their city." The same role in Bengaluru and Bangkok carries the same number — because the value created is the same and we don't want to build a two-tier culture.</div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card-title">How equity fills the gap</div>
+      <div class="phil-card-body">Early hires take more risk. Their equity bands reflect this honestly — higher percentages for Phase 1 hires than Phase 3 hires at the same level. Equity is not a token; it should feel meaningful.</div>
+    </div>
+    <div class="phil-card">
+      <div class="phil-card-title">When to revisit</div>
+      <div class="phil-card-body">After each funding round and annually. Salaries should grow with the company's ability to pay. Exceptional people leave when their comp stops reflecting their contribution — not when they find a higher number elsewhere.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPLOYMENT MODEL -->
+<section id="deployment">
+  <div class="section-eyebrow">Deployment model</div>
+  <h2 class="section-title">One track, not two</h2>
+  <p class="section-subtitle">There is one Deployment Lead profile, one career path, and one standard of excellence. The platform does the heavy lifting — the DL's job evolves alongside it.</p>
+
+  <div class="insight">
+    <strong>The evolution of a Deployment Lead:</strong> Early in a contract, they are domain-heavy and hands-on — producing the analysis the Judgement Engine will eventually automate. Over time, as the platform matures, they shift toward configuring, operating, and expanding it within the client. Same person, same relationship, growing leverage. The platform makes them more powerful with each engagement — it never makes them redundant.
+  </div>
+
+  <div class="insight purple">
+    <strong>Career arc:</strong> Deployment Lead (4–6 yrs exp) → Senior Deployment Lead (7–10 yrs) → Head of Deployment (10+ yrs). No second-class tier, no consulting-vs-product split. The people who join early and grow with the platform become Verdera's most durable asset — they carry both the institutional trust and the muscle memory of how the platform was built.
+  </div>
+
+  <div class="insight amber">
+    <strong>The FDE parallel:</strong> This is how Palantir's Forward Deployed Engineers worked — one role that started close to the data and ended up running critical infrastructure. The platform made them more powerful, not obsolete. Verdera Deployment Leads follow the same arc. The analogy is worth using in recruiting conversations.
+  </div>
+</section>
+
+<!-- GLOBAL TEAM -->
+<section id="global">
+  <div class="section-eyebrow">Global team</div>
+  <h2 class="section-title">Global from Day 1,<br>not global eventually</h2>
+  <p class="section-subtitle">Verdera is not an Indian company going global — it is a global company headquartered in Bengaluru. That distinction needs to show up in job descriptions, the website, comp philosophy, and who gets hired as Deployment Leads from Day 1. The Bengaluru core is dense and fast; the global layer follows contract geography, not speculation.</p>
+
+  <div class="insight">
+    <strong>Hub-and-deploy:</strong> Bengaluru is the product and operations brain. New York (Aditya's frequent base) anchors the investor and development finance narrative layer. Bangkok is the Southeast Asia client base. New geographies open only when a specific contract or pipeline signal warrants a permanent hire — not on the basis of market potential alone.
+  </div>
+
+  <div class="global-grid">
+    <div class="global-card">
+      <div class="global-card-label">Hiring</div>
+      <div class="global-card-title">Global talent pool, Bengaluru density</div>
+      <div class="global-card-body">Deployment Leads and domain experts are hired from wherever the best climate expertise lives — not just India. UNDP alumni in Nairobi, adaptation specialists in London, ex-ADB people in Manila are fair game from Day 1. The platform team concentrates in Bengaluru for execution speed.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-card-label">Rhythms</div>
+      <div class="global-card-title">Async-first, sprint-together</div>
+      <div class="global-card-body">Default to async documentation and written communication. Quarterly in-person team sprints in Bengaluru — all remote hires fly in. These are culture, alignment, and product immersion events. Not status update meetings.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-card-label">Language</div>
+      <div class="global-card-title">English as the operating language</div>
+      <div class="global-card-body">All internal docs, proposals, and platforms in English from Day 1. Not a concession — a deliberate global posture signal that attracts international talent and makes client-facing work seamless.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-card-label">Comp</div>
+      <div class="global-card-title">Role-and-level, not location</div>
+      <div class="global-card-body">Covered in detail in the Compensation section — same role, same rate, regardless of geography. Two-tier pay for the same role destroys global culture faster than anything else.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-card-label">Identity</div>
+      <div class="global-card-title">The narrative signals the ambition</div>
+      <div class="global-card-body">The website, case studies, and job descriptions should all signal global ambition from the first post. Aditya's external presence is the primary carrier of this — he sets the tone of who Verdera is in the world.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-card-label">Storytelling</div>
+      <div class="global-card-title">The Creative Lead embeds the global voice</div>
+      <div class="global-card-body">The Creative &amp; Storytelling Lead must write for a minister in Manila, a DFI analyst in Geneva, and a CFO in New York with equal fluency. Cross-cultural communication experience is not optional for this role — it is the job.</div>
+    </div>
+  </div>
+</section>
+
+<!-- REMOTE MODEL -->
+<section id="remote">
+  <div class="section-eyebrow">Remote model</div>
+  <h2 class="section-title">No offices outside Bengaluru</h2>
+  <p class="section-subtitle">Remote-first for all non-Bengaluru roles, with timezone availability as the sole constraint. No leases, no entities, no compliance overhead outside of what's needed. The quarterly all-hands in Bengaluru is the in-person culture anchor.</p>
+
+  <div class="remote-table">
+    <div class="remote-row header">
+      <div>Role</div>
+      <div>Timezone</div>
+      <div>Notes</div>
+    </div>
+    <div class="remote-row">
+      <div class="remote-row-role">Head of BD / VP sales</div>
+      <div class="remote-row-tz"><span class="tz-tag">CET / EST</span></div>
+      <div class="remote-row-note">Remote, based in Geneva, DC, or London. Must overlap Bengaluru mornings for weekly pipeline reviews. Quarterly Bengaluru sprints.</div>
+    </div>
+    <div class="remote-row">
+      <div class="remote-row-role">Deployment lead #1</div>
+      <div class="remote-row-tz"><span class="tz-tag">Client TZ</span></div>
+      <div class="remote-row-note">Remote, embedded in client geography during active contracts. Client availability is the primary constraint. Quarterly Bengaluru sprints + contract kickoffs.</div>
+    </div>
+    <div class="remote-row">
+      <div class="remote-row-role">Deployment leads #2, #3, #4</div>
+      <div class="remote-row-tz"><span class="tz-tag">Client TZ</span></div>
+      <div class="remote-row-note">Same model — remote, embedded in client geography. Async-first with Bengaluru; synchronous with their client. No permanent office anywhere.</div>
+    </div>
+    <div class="remote-row">
+      <div class="remote-row-role">Creative &amp; storytelling lead</div>
+      <div class="remote-row-tz"><span class="tz-tag">IST ± 3h</span></div>
+      <div class="remote-row-note">Flexible — ideally within IST ±3h for real-time collaboration with Aditya. If based in NY, Aditya's monthly visits cover sync time. Strong async documentation required.</div>
+    </div>
+    <div class="remote-row">
+      <div class="remote-row-role">Head of deployment</div>
+      <div class="remote-row-tz"><span class="tz-tag">IST ± 4h</span></div>
+      <div class="remote-row-note">Remote but must overlap significantly with Bengaluru (Gautam's working hours). Manages the global deployment team — reachability during core Bengaluru day is essential.</div>
+    </div>
+    <div class="remote-row">
+      <div class="remote-row-role">Head of customer success</div>
+      <div class="remote-row-tz"><span class="tz-tag">IST ± 5h</span></div>
+      <div class="remote-row-note">Remote. Client-facing so client availability matters more than Bengaluru overlap. Quarterly Bengaluru in-person.</div>
+    </div>
+    <div class="remote-row">
+      <div class="remote-row-role">Regional BD lead</div>
+      <div class="remote-row-tz"><span class="tz-tag">Local TZ</span></div>
+      <div class="remote-row-note">Fully remote in their geography. Weekly async update, monthly video sync with Gautam, quarterly Bengaluru sprint.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PHASE 1 -->
+<section id="phase1">
+  <div class="section-eyebrow">Hiring plan</div>
+  <h2 class="section-title">Three phases,<br>clear triggers</h2>
+  <p class="section-subtitle">Every hire has a specific trigger condition — not a calendar date. Hires happen when the business signals it's ready, not on a schedule.</p>
+
+  <div class="rev-bars">
+    <div class="rev-row"><div class="rev-label">Year 1</div><div class="rev-track"><div class="rev-fill" style="width:9%;background:var(--green-light)"></div></div><div class="rev-val">$1–2M ARR</div></div>
+    <div class="rev-row"><div class="rev-label">Year 2</div><div class="rev-track"><div class="rev-fill" style="width:35%;background:#2A7DC4"></div></div><div class="rev-val">$5–7M ARR</div></div>
+    <div class="rev-row"><div class="rev-label">Year 3</div><div class="rev-track"><div class="rev-fill" style="width:100%;background:var(--amber)"></div></div><div class="rev-val">$15–20M ARR</div></div>
+  </div>
+
+  <div class="phase-header p1">
+    <span class="phase-badge">Phase 1</span>
+    <h3>Months 0–12 · Build the engine room</h3>
+    <div class="phase-stats">
+      <span>Target: $1–2M ARR</span>
+      <span>New hires: 4</span>
+      <span>Total team: 6</span>
+      <span>Gautam grounds operations. Aditya drives narrative and fundraise.</span>
+    </div>
+  </div>
+
+  <div class="role-grid" id="rg1"></div>
+</section>
+
+<!-- PHASE 2 -->
+<section id="phase2">
+  <div class="phase-header p2">
+    <span class="phase-badge">Phase 2</span>
+    <h3>Months 12–24 · Free the founders</h3>
+    <div class="phase-stats">
+      <span>Target: $5–7M ARR</span>
+      <span>New hires: 5</span>
+      <span>Total team: 11</span>
+      <span>Gautam hands off execution layer. Aditya hands off day-to-day product.</span>
+    </div>
+  </div>
+
+  <div class="role-grid" id="rg2"></div>
+</section>
+
+<!-- PHASE 3 -->
+<section id="phase3">
+  <div class="phase-header p3">
+    <span class="phase-badge">Phase 3</span>
+    <h3>Months 24–36 · Scale the machine</h3>
+    <div class="phase-stats">
+      <span>Target: $15–20M ARR</span>
+      <span>New hires: 7–9</span>
+      <span>Total team: 19–21</span>
+      <span>Both founders fully in strategic roles. Platform and delivery running at scale.</span>
+    </div>
+  </div>
+
+  <div class="role-grid" id="rg3"></div>
+
+  <div class="insight amber" style="margin-top:24px;">
+    <strong>The platform leverage test:</strong> At $5–7M ARR, Verdera will look like a successful consulting firm. The risk is drifting into a pure services model — growing by adding people rather than scaling the platform. Every hire should have a clear answer to: does this person help us deliver more with the same platform, or are they just adding labor? The Head of Deployment, Head of Customer Success, and Product Manager are the roles that hold this line.
+  </div>
+</section>
+
+</div>
+</main>
+
+<script>
+const roles = [
+  // PHASE 1
+  {
+    phase: 1, title: "ML / full-stack engineer", fn: "tech", fnL: "Technology",
+    rt: "a", rtL: "Aditya", loc: "Bengaluru",
+    salary: "$80–105K · 0.50–1.00% equity",
+    trigger: "Hire pre-Day 1 — the platform is the product.",
+    detail: "Exceptional, AI-native engineer who has shipped production AI systems. Reports to Aditya and builds the Judgement Engine integrations, client dashboards, and digital twin scaffolding that make the vision tangible. Needs to move fast with ambiguity and translate bold ideas into working software. Profile: 4–7 yrs, could work anywhere globally, chooses Verdera for mission and equity. Bengaluru-based for daily co-location with founders."
+  },
+  {
+    phase: 1, title: "Founder's office lead", fn: "ops", fnL: "Operations",
+    rt: "both", rtL: "Both founders", loc: "Bengaluru",
+    salary: "$50–70K · 0.20–0.40% equity",
+    trigger: "Month 1–2. Highest leverage-per-dollar hire on the list.",
+    detail: "Serves both founders — not an EA, but a thinking partner in execution mode. For Aditya: captures ideas, drafts investor materials, tracks external commitments, coordinates storytelling assets. For Gautam: proposal logistics, contract tracking, CRM hygiene, meeting prep. Must earn trust from two very different founders and flex fluently between them. Profile: 2–4 yrs, exceptional writer, operationally precise, genuinely curious about climate and business."
+  },
+  {
+    phase: 1, title: "BD & sales lead", fn: "bd", fnL: "BD & Sales",
+    rt: "g", rtL: "Gautam", loc: "Bengaluru / flexible",
+    salary: "$65–85K · 0.20–0.35% equity",
+    trigger: "Triggered by: pipeline > 4 qualified opportunities or Gautam spending >25% of time on proposal admin.",
+    detail: "A real closer-in-training, not a support role. Executes the BD pipeline under Gautam's relationship layer — proposal writing, RFP responses, procurement navigation, follow-through on warm introductions. Located wherever Gautam primarily operates. Profile: 3–6 yrs inside or selling to UN agencies, DFIs, or large institutional clients. Strong writer, patient with long cycles. Should grow into Head of BD over time."
+  },
+  {
+    phase: 1, title: "Deployment lead #1", fn: "dep", fnL: "Deployment",
+    rt: "g", rtL: "Gautam", loc: "Bangkok / NY / client-adjacent",
+    salary: "$95–120K · 0.35–0.65% equity",
+    trigger: "Triggered by: second contract signed or Gautam stretched across 2+ live engagements.",
+    detail: "The first FDE-style hire. Embeds in client workflows and delivers Verdera-Verified outputs — risk assessments, adaptation plans, monitoring frameworks. This person's job evolves with the platform: early on, domain-heavy and hands-on; over time, increasingly platform-operator and client strategist. Based where the anchor contract is. Profile: 5–8 yrs, UNDP/ADB/World Bank background or top-tier adaptation consultancy. Credible in senior institutional rooms."
+  },
+
+  // PHASE 2
+  {
+    phase: 2, title: "Creative & storytelling lead", fn: "creative", fnL: "Creative",
+    rt: "a", rtL: "Aditya", loc: "NY or remote (IST ±3h)",
+    salary: "$95–125K · 0.20–0.35% equity",
+    trigger: "Triggered by: first funding round closed. Bring in before Verdera needs to own its public narrative.",
+    detail: "Builds Verdera's voice, visual identity, and thought leadership engine. Writes case studies, flagship reports, event decks, the language of the company internally and externally. Cross-cultural communicator — the work has to land equally well with a minister in Manila, a DFI analyst in Geneva, and a CFO in New York. Works directly with Aditya; serves BD as an internal client. Profile: senior brand strategist or science communicator with global publication or campaign experience. Not a content marketer — a voice architect."
+  },
+  {
+    phase: 2, title: "Head of BD / VP sales", fn: "bd", fnL: "BD & Sales",
+    rt: "g", rtL: "Gautam", loc: "Geneva / DC / London (remote)",
+    salary: "$170–220K base + 10–15% commission · 0.40–0.65% equity",
+    trigger: "Triggered by: $2M ARR or 3+ engineering consulting JV conversations in parallel.",
+    detail: "Reports to Gautam and owns the full revenue pipeline — DFI channel, engineering consulting JV model, private sector inbound. Must be based where the money is: Geneva, DC, or London. Manages the BD lead. Profile: 8–12 yrs selling to DFIs, intergovernmental bodies, or large B2B enterprise in climate or development. Knows which doors Gautam's name opens and how to walk through them. The commission structure matters — this person should be highly incentivized on closed contracts."
+  },
+  {
+    phase: 2, title: "Deployment lead #2", fn: "dep", fnL: "Deployment",
+    rt: "g", rtL: "Gautam", loc: "Geneva / Singapore / client-adjacent",
+    salary: "$95–120K · 0.20–0.35% equity",
+    trigger: "Triggered by: 3+ concurrent active engagements or Head of BD closes first DFI contract.",
+    detail: "Second FDE hire, same profile and career track as DL #1. May specialize in a different geography (Europe or Southeast Asia) or sector (DFI loan assessment vs supply chain). As the platform matures, both DLs are increasingly operating platform products rather than running manual analysis. The platform makes them more powerful with each engagement."
+  },
+  {
+    phase: 2, title: "Engineer #2 (backend / data)", fn: "tech", fnL: "Technology",
+    rt: "a", rtL: "Aditya", loc: "Bengaluru",
+    salary: "$80–105K · 0.20–0.40% equity",
+    trigger: "Triggered by: engineer #1 at capacity or API product development begins.",
+    detail: "Expands platform capacity — backend APIs, data infrastructure, client portal, real-time M&E pipelines. Pairs with engineer #1 to separate core platform from bespoke delivery tooling. Together these two form the product team nucleus. Profile: 4–6 yrs, strong Python/cloud/data engineering, exceptional not average."
+  },
+  {
+    phase: 2, title: "Finance & ops lead", fn: "ops", fnL: "Operations",
+    rt: "g", rtL: "Gautam", loc: "Bengaluru",
+    salary: "$55–75K · 0.15–0.25% equity",
+    trigger: "Triggered by: funding round closed or revenue > $2M.",
+    detail: "Financial reporting, multi-entity accounting (India + US + any new entities), contract management, legal coordination, vendor management, investor reporting. As Verdera grows across jurisdictions, legal and financial complexity grows fast — this person keeps it clean. Reports to Gautam, who wants to see and understand the numbers. Can grow into CFO."
+  },
+
+  // PHASE 3
+  {
+    phase: 3, title: "Head of deployment", fn: "dep", fnL: "Deployment",
+    rt: "g", rtL: "Gautam", loc: "Remote (IST ±4h)",
+    salary: "$145–180K · 0.30–0.50% equity",
+    trigger: "Triggered by: 4+ concurrent engagements or Gautam can't oversee all active contracts.",
+    detail: "Extends Gautam's delivery world — runs the day-to-day coordination of all deployment leads, quality-controls Verdera Verified outputs, builds reusable delivery playbooks per segment. Must earn Gautam's trust completely. Profile: someone who has managed complex multi-country climate programs and knows what 'excellent' looks like in this domain. Grew from DL #1 if that person has the range, or an external senior hire."
+  },
+  {
+    phase: 3, title: "Deployment leads #3 & #4", fn: "dep", fnL: "Deployment",
+    rt: "g", rtL: "Head of Deployment", loc: "Regional / client-adjacent",
+    salary: "$95–120K each · 0.10–0.20% equity",
+    trigger: "Triggered by: first national ministry contract signed.",
+    detail: "Expand delivery capacity for ministry-scale engagements — longer, higher-stakes, requiring deep local and political context. At least one should be locally hired from the contract geography. A local hire carries institutional relationships and cultural navigation that can't be imported. Same career track as DL #1 and #2."
+  },
+  {
+    phase: 3, title: "Senior tech lead / engineering manager", fn: "tech", fnL: "Technology",
+    rt: "a", rtL: "Aditya", loc: "Bengaluru",
+    salary: "$130–165K · 0.20–0.35% equity",
+    trigger: "Triggered by: engineering team at 2 people or API revenue pillar in build.",
+    detail: "Allows Aditya to fully step into CPO mode. Sets architecture standards, drives the API product, manages engineers #1 and #2. Aditya should be able to fully trust this person's technical judgment. Profile: 7–10 yrs, strong ML infrastructure and distributed systems, has led a small team. Should be someone Aditya would have wanted to hire at any point in his career."
+  },
+  {
+    phase: 3, title: "Product manager", fn: "tech", fnL: "Technology",
+    rt: "a", rtL: "Aditya", loc: "Bengaluru",
+    salary: "$80–105K · 0.15–0.28% equity",
+    trigger: "Triggered by: 3+ distinct product surfaces deployed (dashboard, agent, digital twin).",
+    detail: "Operationalizes Aditya's product vision into a roadmap the engineering team executes. Manages client feedback synthesis, modular lego block roadmap, feature prioritization. Aditya stays as chief product visionary; this person runs the structured process underneath. Profile: 4–7 yrs B2B product, data/AI or climate/ESG SaaS."
+  },
+  {
+    phase: 3, title: "Head of customer success", fn: "dep", fnL: "Deployment",
+    rt: "g", rtL: "Gautam", loc: "Remote (IST ±5h)",
+    salary: "$100–135K · 0.20–0.30% equity",
+    trigger: "Triggered by: 8+ active client accounts with renewal cycles.",
+    detail: "Renewal is a delivery-quality outcome — clients renew because the work was excellent, and Gautam owns that culture. Manages QBRs, renewal negotiations, account expansion. Goal: 80%+ gross renewal rate, significant expansion revenue within existing accounts. Profile: ex-enterprise CSM with UN/DFI/ESG client base who understands institutional procurement cycles."
+  },
+  {
+    phase: 3, title: "Regional BD lead", fn: "bd", fnL: "BD & Sales",
+    rt: "g", rtL: "Gautam", loc: "Nairobi / Singapore / London (remote)",
+    salary: "$80–130K + commission · 0.15–0.25% equity",
+    trigger: "Triggered by: $5M ARR + strong inbound from a specific geography.",
+    detail: "Opens the next geographic frontier. Must be locally embedded — not an expat from HQ. Reports to Gautam for pipeline accountability; Aditya should feel personal conviction about the geography before this hire is made. The geography choice follows revenue signal, not map aesthetics."
+  },
+];
+
+function makeCard(role) {
+  const rtClass = role.rt === 'a' ? 'to-a' : role.rt === 'g' ? 'to-g' : 'to-both';
+  const rtArrow = `<svg width="11" height="11" viewBox="0 0 12 12" fill="none" style="flex-shrink:0;margin-top:1px"><path d="M6 2v7M3 6l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const fnMap = { dep: 'fn-dep', tech: 'fn-tech', bd: 'fn-bd', ops: 'fn-ops', creative: 'fn-creative' };
+
+  const card = document.createElement('div');
+  card.className = 'role-card';
+  card.innerHTML = `
+    <div class="role-card-top">
+      <div class="role-card-title">${role.title}</div>
+      <span class="fn-tag ${fnMap[role.fn]}">${role.fnL}</span>
+    </div>
+    <div class="role-meta">
+      <div class="reports-tag ${rtClass}">${rtArrow} Reports to ${role.rtL}</div>
+      <span class="loc-tag">${role.loc}</span>
+    </div>
+    <div class="role-salary">${role.salary}</div>
+    <div class="role-trigger">
+      <div class="trigger-dot"></div>
+      <span>${role.trigger}</span>
+    </div>
+    <div class="role-detail">${role.detail}</div>
+    <div class="role-expand">Tap to expand ↓</div>
+  `;
+  card.addEventListener('click', () => {
+    const open = card.classList.toggle('open');
+    card.querySelector('.role-expand').textContent = open ? 'Collapse ↑' : 'Tap to expand ↓';
+  });
+  return card;
+}
+
+[1, 2, 3].forEach(p => {
+  const grid = document.getElementById(`rg${p}`);
+  roles.filter(r => r.phase === p).forEach(r => grid.appendChild(makeCard(r)));
+});
+
+// Active nav on scroll
+const sections = document.querySelectorAll('section[id], .hero[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
